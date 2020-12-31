@@ -19,6 +19,9 @@ A new Flutter plugin.
   s.dependency 'MercadoPagoSDK', '~> 4.32.4'
   s.platform     = :ios, '10.0'
 
+
+  s.static_framework = true
+
   # Flutter.framework does not contain a i386 slice. Only x86_64 simulators are supported.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
   s.swift_version = '4.2'
